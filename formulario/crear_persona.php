@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] = "POST") {
 
 }
 
-$sql = "INSERT INTO personas (cedula, nombre, apellido, fecha_nacimiento) VALUES('$cedula','$nombre', '$apellido', '$fecha')";
+$sql = "INSERT INTO people (cedula, nombre, apellido, fecha_nacimiento) VALUES('$cedula','$nombre', '$apellido', '$fecha')";
 
 if(mysqli_query($conexion,$sql)) {
     echo "Persona creada";
